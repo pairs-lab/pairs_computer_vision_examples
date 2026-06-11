@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>pairs_example_blob_detector</name>
+  <version>1.0.0</version>
+  <description>The Python Example for Blob Detector</description>
+
+  <maintainer email="canhthanh@vnu.edu.vn">Thanh Nguyen Canh</maintainer>
+  <author email="canhthanh@vnu.edu.vn">Thanh Nguyen Canh</author>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+
+  <export>
+  </export>
+
+</package>

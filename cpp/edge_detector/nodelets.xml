@@ -1,0 +1,5 @@
+<library path="lib/libEdgeDetector">
+  <class name="pairs_example_edge_detector/EdgeDetector" type="pairs_example_edge_detector::EdgeDetector" base_class_type="nodelet::Nodelet">
+    <description>EdgeDetector nodelet</description>
+  </class>
+</library>
