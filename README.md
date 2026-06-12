@@ -1,4 +1,4 @@
-# MRS Computer Vision Examples
+# PAIRS Computer Vision Examples
 
 ## C++
 
