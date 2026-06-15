@@ -1,12 +1,37 @@
 # PAIRS Computer Vision Examples
 
-## C++
+Worked, runnable examples showing how to do camera and image processing inside the PAIRS UAV stack. Each example is a small ROS package that subscribes to a UAV camera, runs an OpenCV algorithm, and republishes the result, so you can copy it as a starting point for your own vision nodes. Both examples are meant to be flown in the PAIRS Gazebo simulation.
 
-* [Edge Detector](./cpp/edge_detector) - Comprehensive C++ ROS Example with OpenCV Edge detector
+## Contents
 
-## Python
+- [cpp/edge_detector](./cpp/edge_detector) — `pairs_example_edge_detector`: a C++ nodelet (`pairs_example_edge_detector/EdgeDetector`) demonstrating ImageTransport I/O, OpenCV Canny edge detection, the pinhole camera model, and TF2 point transforms. It is the more comprehensive template, with extensive notes on image-processing coding practices.
+- [python/blob_detector](./python/blob_detector) — `pairs_example_blob_detector`: a compact Python node demonstrating OpenCV blob detection on a camera stream.
 
-* [Blob Detector](./python/blob_detector) - Simple Python ROS Example with OpenCV Blob detector
+## Install (ROS 1 Noetic)
+
+```bash
+sudo apt install ros-noetic-pairs-example-edge-detector
+sudo apt install ros-noetic-pairs-example-blob-detector
+```
+
+## Usage
+
+Each example ships its own simulation session. From the example directory:
+
+```bash
+# C++ edge detector
+cd cpp/edge_detector && ./tmux/start.sh
+
+# Python blob detector
+cd python/blob_detector && ./tmux/start.sh
+```
+
+You can also launch a single node directly, e.g.:
+
+```bash
+roslaunch pairs_example_edge_detector edge_detector.launch
+roslaunch pairs_example_blob_detector blob_detector.launch
+```
 
 # Disclaimer
 
