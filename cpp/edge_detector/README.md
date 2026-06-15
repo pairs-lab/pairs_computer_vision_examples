@@ -2,7 +2,7 @@
 
 This package was created as an example of how to use OpenCV and write packages for image processing or computer vision.
 For a more general package example, see the [waypoint_flier](https://github.com/pairs-lab/pairs_core_examples/tree/master/cpp/waypoint_flier).
-You can test the program in simulation (see our [simulation tutorial](https://ctu-mrs.github.io/docs/simulation/howto.html)).
+You can test the program in the PAIRS Gazebo simulation.
 
 ## Example features
 
@@ -24,7 +24,6 @@ You can test the program in simulation (see our [simulation tutorial](https://ct
 
 Coding practices, related to packages working with images, are described here.
 For a more detailed description of good programming practices in the context of ROS, see the [waypoint_flier](https://github.com/pairs-lab/pairs_core_examples/tree/master/cpp/waypoint_flier).
-Also check out our general [C++ good/bad coding practices tutorial](https://ctu-mrs.github.io/docs/introduction/c_to_cpp.html).
 
 ### Using `cv_bridge::toCvShare()` or `cv_bridge::toCvCopy()` for converting between `sensor_msgs::Image` and `cv::Mat`
 *Reference documentation: [C++ API docs](http://docs.ros.org/melodic/api/cv_bridge/html/c++/), [example usage](https://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages)*
