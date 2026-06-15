@@ -60,7 +60,7 @@ private:
 
   std::string _uav_name_;
 
-  // | --------------------- MRS transformer -------------------- |
+  // | --------------------- PAIRS transformer -------------------- |
 
   std::unique_ptr<pairs_lib::Transformer> transformer_;
 
